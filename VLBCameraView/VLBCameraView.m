@@ -42,7 +42,6 @@ VLBCameraViewMeta const VLBCameraViewMetaOriginalImage = @"VLBCameraViewMetaOrig
 @property(nonatomic, strong) AVCaptureStillImageOutput *stillImageOutput;
 @property(nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 @property(nonatomic, strong) AVCaptureConnection *stillImageConnection;
-@property(nonatomic, weak) IBOutlet UIImageView* preview;
 
 - (void)retakePicture:(UITapGestureRecognizer*) tapToRetakeGesture;
 @end
@@ -54,11 +53,12 @@ VLBCameraViewInit const VLBCameraViewInitBlock = ^(VLBCameraView *cameraView){
     cameraView.videoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:cameraView.session];
 	cameraView.videoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
 	cameraView.videoPreviewLayer.frame = cameraView.layer.bounds;
-    
-    cameraView.flashView = [[UIView alloc] initWithFrame:cameraView.preview.bounds];
-    cameraView.flashView.backgroundColor = [UIColor whiteColor];
-    cameraView.flashView.alpha = 0.0f;
-    [cameraView.videoPreviewLayer addSublayer:cameraView.flashView.layer];
+    if (cameraView.preview){
+        cameraView.flashView = [[UIView alloc] initWithFrame:cameraView.preview.bounds];
+        cameraView.flashView.backgroundColor = [UIColor whiteColor];
+        cameraView.flashView.alpha = 0.0f;
+        [cameraView.videoPreviewLayer addSublayer:cameraView.flashView.layer];
+    }
 };
 
 @implementation VLBCameraView

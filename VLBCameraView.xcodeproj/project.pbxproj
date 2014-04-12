@@ -25,7 +25,6 @@
 		BDFD0AA51789800800DF1A90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFD0A921789800700DF1A90 /* Foundation.framework */; };
 		BDFD0AAE1789800800DF1A90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDFD0AAC1789800800DF1A90 /* InfoPlist.strings */; };
 		BDFD0ACF1789816200DF1A90 /* VLBCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFD0ACD1789816200DF1A90 /* VLBCameraView.m */; };
-		BDFD0AD01789816200DF1A90 /* VLBCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFD0ACE1789816200DF1A90 /* VLBCameraView.xib */; };
 		BDFD0AD11789816B00DF1A90 /* VLBCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFD0ACD1789816200DF1A90 /* VLBCameraView.m */; };
 		BDFD0AD3178981A800DF1A90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFD0AD2178981A800DF1A90 /* UIKit.framework */; };
 		BDFD0AD5178981AE00DF1A90 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFD0AD4178981AE00DF1A90 /* AVFoundation.framework */; };
@@ -66,7 +65,6 @@
 		BDFD0AAD1789800800DF1A90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BDFD0ACC1789816200DF1A90 /* VLBCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLBCameraView.h; sourceTree = "<group>"; };
 		BDFD0ACD1789816200DF1A90 /* VLBCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLBCameraView.m; sourceTree = "<group>"; };
-		BDFD0ACE1789816200DF1A90 /* VLBCameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VLBCameraView.xib; sourceTree = "<group>"; };
 		BDFD0AD2178981A800DF1A90 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDFD0AD4178981AE00DF1A90 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BDFD0AD6178992FF00DF1A90 /* VLBCameraViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLBCameraViewTest.m; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 			children = (
 				BDFD0ACC1789816200DF1A90 /* VLBCameraView.h */,
 				BDFD0ACD1789816200DF1A90 /* VLBCameraView.m */,
-				BDFD0ACE1789816200DF1A90 /* VLBCameraView.xib */,
 				BDFD0A951789800700DF1A90 /* Supporting Files */,
 			);
 			path = VLBCameraView;
@@ -273,7 +270,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDFD0AAE1789800800DF1A90 /* InfoPlist.strings in Resources */,
-				BDFD0AD01789816200DF1A90 /* VLBCameraView.xib in Resources */,
 				BDBD0B601789A3CA003A7B23 /* 8mpximage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

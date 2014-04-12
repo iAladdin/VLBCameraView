@@ -155,6 +155,7 @@ extern VLBCameraViewMeta const VLBCameraViewMetaOriginalImage;
  */
 @property(nonatomic, strong) UIView *flashView;
 
+@property(nonatomic, weak) IBOutlet UIImageView* preview;
 
 /**
  Takes a still image of the current frame from the video feed.
